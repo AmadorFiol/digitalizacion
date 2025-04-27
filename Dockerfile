@@ -1,6 +1,8 @@
 # Imagen oficial de PHP con servidor embebido
 FROM php:8.2-cli
 
+RUN docker-php-ext-install mysqli
+
 # Copiar todo dentro del contenedor
 COPY public/ /var/www/html/
 

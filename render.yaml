@@ -4,4 +4,4 @@ services:
     env: docker
     plan: free
     dockerfilePath: ./Dockerfile
-    rootDir: .
+    rootDir: public

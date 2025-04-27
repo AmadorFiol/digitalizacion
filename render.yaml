@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: formulario-php
+    env: docker
+    plan: free
+    dockerfilePath: ./Dockerfile
+    rootDir: public

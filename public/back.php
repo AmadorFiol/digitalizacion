@@ -5,9 +5,13 @@ $username = "avnadmin";
 $password = "AVNS_bjTACm6K5hQk8pK5y0U";
 $database = "digitalizacion";
 $port = 27378;
+$sslCa = "../ca.pem";
 
 // Crear conexión
 $conn = new mysqli($servername, $username, $password, $database, $port);
+
+// Configurar SSL
+$conn->ssl_set(NULL, Null, Null, $sslCa, NULL);
 
 // Verificar conexión
 if ($conn->connect_error) {
